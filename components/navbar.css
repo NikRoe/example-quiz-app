@@ -1,0 +1,13 @@
+.navbar--wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar--wrapper li {
+  list-style-type: none;
+}
+
+.navbar--wrapper img {
+  width: 3em;
+  height: 3em;
+}
