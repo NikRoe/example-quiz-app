@@ -1,0 +1,15 @@
+.button--card {
+  width: 30%;
+  align-self: center;
+  border-radius: 9999px;
+  background-color: var(--callToAction-button-color);
+  color: var(--callToAction-text-color);
+}
+
+.button--form {
+  width: 15em;
+  align-self: center;
+  border-radius: 9999px;
+  background-color: var(--callToAction-button-color);
+  color: var(--callToAction-text-color);
+}

@@ -7,7 +7,7 @@
   border: 2px solid black;
   margin: 1em;
   padding: 1em;
-  background-color: aquamarine;
+  background-color: white;
   gap: 1.5em;
 }
 
@@ -25,10 +25,4 @@
 
 .tag--wrapper li {
   list-style-type: none;
-}
-
-.cardbutton {
-  width: 30%;
-  align-self: center;
-  border-radius: 9999px;
 }

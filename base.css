@@ -10,4 +10,16 @@ html {
 
 h1 {
   text-align: center;
+  margin: 1em;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+:root {
+  --main-bg-color: #eee;
+  --callToAction-button-color: rgb(189, 53, 53);
+  --callToAction-text-color: beige;
+  --navbar-hover-color: rgb(215, 104, 104);
 }

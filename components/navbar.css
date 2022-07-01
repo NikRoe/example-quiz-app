@@ -5,25 +5,25 @@
   bottom: 0;
   width: 100vw;
   overflow: hidden;
+  margin-top: 4em;
+  background-color: var(--callToAction-button-color);
 }
 
-.navbar--wrapper li {
+.navbar--wrapper a {
   list-style-type: none;
   width: 25vw;
   display: flex;
   justify-content: center;
   padding: 0.5em;
+  text-decoration: none;
+}
+
+.navbar--wrapper a:hover,
+.navbar--wrapper-active {
+  background-color: var(--navbar-hover-color);
 }
 
 .navbar--wrapper img {
   width: 3em;
   height: 3em;
-}
-
-.navbar--wrapper-active {
-  background-color: aqua;
-}
-
-nav {
-  margin-top: 4em;
 }

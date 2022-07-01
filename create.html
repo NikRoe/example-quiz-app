@@ -10,36 +10,51 @@
   <body>
     <header><h1>Create</h1></header>
     <main>
-      <form>
+      <form class="form--wrapper">
         <fieldset>
-          <legend>Create your own cards</legend>
-          <label for="questionInput">Creating Cards</label
-          ><textarea id="questionInput" name="questionInput"></textarea>
+          <label for="questionInput">Question</label
+          ><textarea
+            id="questionInput"
+            name="questionInput"
+            rows="5"
+            placeholder="Enter your question"
+          ></textarea>
         </fieldset>
+        <fieldset>
+          <label for="questionInput">Answer</label
+          ><textarea
+            id="questionInput"
+            name="questionInput"
+            rows="5"
+            placeholder="Enter the answer"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <label for="questionInput">Tag</label
+          ><textarea
+            id="questionInput"
+            name="questionInput"
+            placeholder="Enter tags and separate by commas"
+          ></textarea>
+        </fieldset>
+        <button class="button--form">Submit</button>
       </form>
-      <nav>
-        <ul class="navbar--wrapper">
-          <li>
-            <a href="/index.html"
-              ><img src="./assets/homeIcon--inactive.svg" alt="HomeButton"
-            /></a>
-          </li>
-          <li>
-            <a href="/bookmarks.html"
-              ><img src="./assets/bookmark--inactive.svg" alt="Bookmarks"
-            /></a>
-          </li>
-          <li>
-            <a href="/create.html"
-              ><img src="./assets/create--active.svg" alt="Create"
-            /></a>
-          </li>
-          <li>
-            <a href="/profile.html"
-              ><img src="./assets/profile--inactive.svg" alt="Profile"
-            /></a>
-          </li>
-        </ul>
+      <nav class="navbar--wrapper">
+        <a href="/index.html"
+          ><img src="./assets/homeIcon--inactive.svg" alt="HomeButton"
+        /></a>
+
+        <a href="/bookmarks.html"
+          ><img src="./assets/bookmark--inactive.svg" alt="Bookmarks"
+        /></a>
+
+        <a href="/create.html" class="navbar--wrapper-active"
+          ><img src="./assets/create--active.svg" alt="Create"
+        /></a>
+
+        <a href="/profile.html"
+          ><img src="./assets/profile--inactive.svg" alt="Profile"
+        /></a>
       </nav>
     </main>
   </body>
