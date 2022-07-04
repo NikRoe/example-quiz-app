@@ -9,7 +9,7 @@
   background-color: var(--callToAction-button-color);
 }
 
-.navbar--wrapper a {
+.navbar--anchor {
   list-style-type: none;
   width: 25vw;
   display: flex;
@@ -18,12 +18,12 @@
   text-decoration: none;
 }
 
-.navbar--wrapper a:hover,
+.navbar--anchor:hover,
 .navbar--wrapper-active {
   background-color: var(--navbar-hover-color);
 }
 
-.navbar--wrapper img {
+.navbar--img {
   width: 3em;
   height: 3em;
 }
