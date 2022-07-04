@@ -1,0 +1,8 @@
+.tag--wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tag {
+  list-style-type: none;
+}
