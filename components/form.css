@@ -5,7 +5,7 @@
   gap: 2em;
 }
 
-.form--wrapper fieldset {
+.fieldset {
   border-radius: 14px;
   padding: 1.5em;
   display: flex;
