@@ -10,30 +10,51 @@
   <body>
     <header><h1>Create</h1></header>
     <main>
-      <article></article>
-      <nav>
-        <ul>
-          <li>
-            <a href="/index.html"
-              ><img src="./assets/homeIcon--inactive.svg" alt="HomeButton"
-            /></a>
-          </li>
-          <li>
-            <a href="/bookmarks.html"
-              ><img src="./assets/bookmark--inactive.svg" alt="Bookmarks"
-            /></a>
-          </li>
-          <li>
-            <a href="/create.html"
-              ><img src="./assets/create--active.svg" alt="Create"
-            /></a>
-          </li>
-          <li>
-            <a href="/profile.html"
-              ><img src="./assets/profile--inactive.svg" alt="Profile"
-            /></a>
-          </li>
-        </ul>
+      <form class="form--wrapper">
+        <fieldset class="fieldset">
+          <label for="questionInput">Question</label
+          ><textarea
+            id="questionInput"
+            name="questionInput"
+            rows="5"
+            placeholder="Enter your question"
+          ></textarea>
+        </fieldset>
+        <fieldset class="fieldset">
+          <label for="answerInput">Answer</label
+          ><textarea
+            id="answerInput"
+            name="answerInput"
+            rows="5"
+            placeholder="Enter the answer"
+          ></textarea>
+        </fieldset>
+        <fieldset class="fieldset">
+          <label for="tagInput">Tag</label
+          ><textarea
+            id="tagInput"
+            name="tagInput"
+            placeholder="Enter tags and separate by commas"
+          ></textarea>
+        </fieldset>
+        <button class="button--form">Submit</button>
+      </form>
+      <nav class="navbar--wrapper">
+        <a href="/index.html"
+          ><img src="./assets/homeIcon--inactive.svg" alt="HomeButton"
+        /></a>
+
+        <a href="/bookmarks.html"
+          ><img src="./assets/bookmark--inactive.svg" alt="Bookmarks"
+        /></a>
+
+        <a href="/create.html" class="navbar--wrapper-active"
+          ><img src="./assets/create--active.svg" alt="Create"
+        /></a>
+
+        <a href="/profile.html"
+          ><img src="./assets/profile--inactive.svg" alt="Profile"
+        /></a>
       </nav>
     </main>
   </body>

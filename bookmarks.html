@@ -10,30 +10,42 @@
   <body>
     <header><h1>Bookmarks</h1></header>
     <main>
-      <article></article>
-      <nav>
-        <ul>
-          <li>
-            <a href="/index.html"
-              ><img src="./assets/homeIcon--inactive.svg" alt="HomeButton"
-            /></a>
-          </li>
-          <li>
-            <a href="/bookmarks.html"
-              ><img src="./assets/bookmark--active.svg" alt="Bookmarks"
-            /></a>
-          </li>
-          <li>
-            <a href="/create.html"
-              ><img src="./assets/create--inactive.svg" alt="Create"
-            /></a>
-          </li>
-          <li>
-            <a href="/profile.html"
-              ><img src="./assets/profile--inactive.svg" alt="Profile"
-            /></a>
-          </li>
+      <article class="questioncard">
+        <h2>Question:</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+          aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam, iusto
+          inventore quos praesentium saepe, eveniet odio illo amet adipisci
+          consequuntur?
+        </p>
+        <img
+          src="./assets/bookmark--active.svg"
+          class="questioncard--bookmark"
+        />
+        <button class="button--card">Show Answer</button>
+        <ul class="tag--wrapper">
+          <li class="tag">HTML</li>
+          <li class="tag">Git</li>
+          <li class="tag">Markdown</li>
+          <li class="tag">CSS</li>
         </ul>
+      </article>
+      <nav class="navbar--wrapper">
+        <a href="/index.html"
+          ><img src="./assets/homeIcon--inactive.svg" alt="HomeButton"
+        /></a>
+
+        <a href="/bookmarks.html" class="navbar--wrapper-active"
+          ><img src="./assets/bookmark--active.svg" alt="Bookmarks"
+        /></a>
+
+        <a href="/create.html"
+          ><img src="./assets/create--inactive.svg" alt="Create"
+        /></a>
+
+        <a href="/profile.html"
+          ><img src="./assets/profile--inactive.svg" alt="Profile"
+        /></a>
       </nav>
     </main>
   </body>
