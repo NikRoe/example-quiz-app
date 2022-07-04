@@ -20,3 +20,15 @@
   right: 10px;
   width: 2em;
 }
+
+.hidden {
+  display: none;
+}
+
+.bookmark--active {
+  content: url(../assets/bookmark--active.svg);
+}
+
+.bookmark--inactive {
+  content: url(../assets/bookmark--inactive.svg);
+}

@@ -6,22 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" type="module" defer></script>
   </head>
   <body>
     <header><h1>Quiz-App</h1></header>
     <main>
       <article class="questioncard">
         <h2>Question:</h2>
+        <button class="questioncard--bookmark">
+          <span class="bookmark--active" data-js="bookmarkIcon"></span>
+        </button>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
           aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam, iusto
           inventore quos praesentium saepe, eveniet odio illo amet adipisci
           consequuntur?
         </p>
-        <button class="questioncard--bookmark">
-          <img src="./assets/bookmark--active.svg" />
-        </button>
-        <button class="button--card">Show Answer</button>
+        <button class="button--card" data-js="answerButton">Show Answer</button>
+        <p class="hidden" data-js="answerText">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+          aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam, iusto
+          inventore quos praesentium saepe, eveniet odio illo amet adipisci
+          consequuntur?
+        </p>
         <ul class="tag--wrapper">
           <li class="tag">HTML</li>
           <li class="tag">Git</li>
@@ -79,6 +86,7 @@
           <img src="./assets/bookmark--active.svg" />
         </button>
         <button class="button--card">Show Answer</button>
+
         <ul class="tag--wrapper">
           <li class="tag">HTML</li>
           <li class="tag">Git</li>
