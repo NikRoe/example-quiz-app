@@ -1,14 +1,16 @@
 const showAnswerButton = document.querySelector('[data-js="answerButton"]');
 const answerText = document.querySelector('[data-js="answerText"]');
 
-showAnswerButton.addEventListener("click", () => {
+function onAnswerButtonClick() {
   answerText.classList.toggle("hidden");
-  if (showAnswerButton.textContent === "Show Answer") {
-    showAnswerButton.textContent = "Hide Answer";
+  if (showAnswerButton.innerText === "Show Answer") {
+    showAnswerButton.innerText = "Hide Answer";
   } else {
-    showAnswerButton.textContent = "Show Answer";
+    showAnswerButton.innerText = "Show Answer";
   }
-});
+}
+
+showAnswerButton.addEventListener("click", onAnswerButtonClick);
 
 const bookmarkIcon = document.querySelector('[data-js="bookmarkIcon"]');
 
