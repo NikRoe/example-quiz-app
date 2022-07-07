@@ -22,4 +22,5 @@ body {
   --callToAction-button-color: rgb(189, 53, 53);
   --callToAction-text-color: beige;
   --navbar-hover-color: rgb(215, 104, 104);
+  --main-border-color: white;
 }

@@ -21,6 +21,7 @@
 .navbar--anchor:hover,
 .navbar--wrapper-active {
   background-color: var(--navbar-hover-color);
+  cursor: pointer;
 }
 
 .navbar--img {

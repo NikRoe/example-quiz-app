@@ -1,5 +1,6 @@
 @import url(../tag/tag.css);
 @import url(../button/button.css);
+@import url(../bookmark/bookmark.css);
 
 .questioncard {
   width: 80%;
@@ -7,52 +8,10 @@
   flex-direction: column;
   align-self: center;
   position: relative;
-  border: 2px solid black;
+  border: 5px solid var(--main-border-color);
+  border-radius: 14px;
   margin-bottom: 4.5em;
   padding: 1em;
-  background-color: white;
+  background-color: var(--main-bg-color);
   gap: 1.5em;
-}
-
-.questioncard--bookmark {
-  all: unset;
-  position: absolute;
-  top: -10px;
-  right: 15px;
-  width: 2em;
-  height: 2em;
-}
-
-.hidden {
-  display: none;
-}
-
-.bookmark--active {
-  content: url(../assets/bookmark--active.svg);
-  width: 3em;
-}
-
-.bookmark--inactive {
-  content: url(../assets/bookmark--inactive.svg);
-  width: 3em;
-}
-
-.card__bookmark {
-  all: unset;
-  user-select: none;
-  position: absolute;
-  height: 10px;
-  right: 10px;
-  top: -10px;
-  border: 10px solid #333;
-  border-bottom-color: transparent;
-}
-
-.card__bookmark--active {
-  border-color: hotpink;
-  border-bottom-color: transparent;
-}
-
-.card__svgBookmark--active {
-  background-color: aqua;
 }

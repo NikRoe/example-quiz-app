@@ -1,9 +1,9 @@
 .button--card {
-  width: 30%;
   align-self: center;
   border-radius: 9999px;
   background-color: var(--callToAction-button-color);
   color: var(--callToAction-text-color);
+  padding: 0.5em;
 }
 
 .button--form {
