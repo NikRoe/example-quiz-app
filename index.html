@@ -6,133 +6,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" type="module" defer></script>
   </head>
   <body>
     <header><h1>Quiz-App</h1></header>
     <main>
-      <article class="questioncard">
-        <h2>Question:</h2>
-        <button class="questioncard--bookmark">
-          <span class="bookmark--active" data-js="bookmarkIcon"></span>
-        </button>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam, iusto
-          inventore quos praesentium saepe, eveniet odio illo amet adipisci
-          consequuntur?
-        </p>
-        <button class="button--card" data-js="answerButton">Show Answer</button>
-        <p class="hidden" data-js="answerText">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam, iusto
-          inventore quos praesentium saepe, eveniet odio illo amet adipisci
-          consequuntur?
-        </p>
-        <ul class="tag--wrapper">
-          <li class="tag">HTML</li>
-          <li class="tag">Git</li>
-          <li class="tag">Markdown</li>
-          <li class="tag">CSS</li>
-        </ul>
-      </article>
-      <article class="questioncard">
-        <h2>Question:</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam, iusto
-          inventore quos praesentium saepe, eveniet odio illo amet adipisci
-          consequuntur?
-        </p>
-        <button class="questioncard--bookmark">
-          <img src="./assets/bookmark--inactive.svg" />
-        </button>
-        <button class="button--card">Show Answer</button>
-        <ul class="tag--wrapper">
-          <li class="tag">HTML</li>
-          <li class="tag">Git</li>
-          <li class="tag">Markdown</li>
-          <li class="tag">CSS</li>
-        </ul>
-      </article>
-      <article class="questioncard">
-        <h2>Question:</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam, iusto
-          inventore quos praesentium saepe, eveniet odio illo amet adipisci
-          consequuntur?
-        </p>
-        <button class="questioncard--bookmark">
-          <img src="./assets/bookmark--active.svg" />
-        </button>
-        <button class="button--card">Show Answer</button>
-        <ul class="tag--wrapper">
-          <li class="tag">HTML</li>
-          <li class="tag">Git</li>
-          <li class="tag">Markdown</li>
-          <li class="tag">CSS</li>
-        </ul>
-      </article>
-      <article class="questioncard">
-        <h2>Question:</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
-          aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam, iusto
-          inventore quos praesentium saepe, eveniet odio illo amet adipisci
-          consequuntur?
-        </p>
-        <button class="questioncard--bookmark">
-          <img src="./assets/bookmark--active.svg" />
-        </button>
-        <button class="button--card">Show Answer</button>
-
-        <ul class="tag--wrapper">
-          <li class="tag">HTML</li>
-          <li class="tag">Git</li>
-          <li class="tag">Markdown</li>
-          <li class="tag">CSS</li>
-        </ul>
-      </article>
+      <!-- Index Page -->
+      <div data-js="index-page" class="content__wrapper">
+        <article class="questioncard" data-js="questionCard">
+          <h2>Question 1:</h2>
+          <button class="card__bookmark" data-js="styledBookmarkIcon"></button>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam,
+            iusto inventore quos praesentium saepe, eveniet odio illo amet
+            adipisci consequuntur?
+          </p>
+          <button class="button--card" data-js="answerButton">
+            Show Answer
+          </button>
+          <p class="hidden" data-js="answerText">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam,
+            iusto inventore quos praesentium saepe, eveniet odio illo amet
+            adipisci consequuntur?
+          </p>
+          <ul class="tag--wrapper">
+            <li class="tag">HTML</li>
+            <li class="tag">Git</li>
+            <li class="tag">Markdown</li>
+            <li class="tag">CSS</li>
+          </ul>
+        </article>
+        <article class="questioncard" data-js="questionCard">
+          <h2>Question 2:</h2>
+          <button class="card__bookmark" data-js="styledBookmarkIcon"></button>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam,
+            iusto inventore quos praesentium saepe, eveniet odio illo amet
+            adipisci consequuntur?
+          </p>
+          <button class="button--card" data-js="answerButton">
+            Show Answer
+          </button>
+          <p class="hidden" data-js="answerText">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam,
+            iusto inventore quos praesentium saepe, eveniet odio illo amet
+            adipisci consequuntur?
+          </p>
+          <ul class="tag--wrapper">
+            <li class="tag">HTML</li>
+            <li class="tag">Git</li>
+            <li class="tag">Markdown</li>
+            <li class="tag">CSS</li>
+          </ul>
+        </article>
+      </div>
+      <!-- Bookmarks Page -->
+      <div class="hidden content__wrapper" data-js="bookmark-page">
+        <article class="questioncard" data-js="questionCard">
+          <h2>Question 2:</h2>
+          <button class="card__bookmark" data-js="styledBookmarkIcon"></button>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam,
+            iusto inventore quos praesentium saepe, eveniet odio illo amet
+            adipisci consequuntur?
+          </p>
+          <button class="button--card" data-js="answerButton">
+            Show Answer
+          </button>
+          <p class="hidden" data-js="answerText">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            aliquam ut? Rem magnam aperiam tempore facilis at quasi aliquam,
+            iusto inventore quos praesentium saepe, eveniet odio illo amet
+            adipisci consequuntur?
+          </p>
+          <ul class="tag--wrapper">
+            <li class="tag">HTML</li>
+            <li class="tag">Git</li>
+            <li class="tag">Markdown</li>
+            <li class="tag">CSS</li>
+          </ul>
+        </article>
+      </div>
+      <!-- Create Page -->
+      <div class="hidden content__wrapper" data-js="create-page">
+        <form class="form--wrapper">
+          <fieldset class="fieldset">
+            <label for="questionInput">Question</label
+            ><textarea
+              id="questionInput"
+              name="questionInput"
+              rows="5"
+              placeholder="Enter your question"
+            ></textarea>
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="answerInput">Answer</label
+            ><textarea
+              id="answerInput"
+              name="answerInput"
+              rows="5"
+              placeholder="Enter the answer"
+            ></textarea>
+          </fieldset>
+          <fieldset class="fieldset">
+            <label for="tagInput">Tag</label
+            ><textarea
+              id="tagInput"
+              name="tagInput"
+              placeholder="Enter tags and separate by commas"
+            ></textarea>
+          </fieldset>
+          <button class="button--form">Submit</button>
+        </form>
+      </div>
+      <!-- Profile Page -->
+      <div class="hidden content__wrapper" data-js="profile-page"></div>
       <nav>
         <ul class="navbar--wrapper">
-          <li class="navbar--item">
-            <a href="/index.html" class="navbar--wrapper-active navbar--anchor"
-              ><img
+          <li class="navbar--item" data-js="navbar-element">
+            <button class="navbar--wrapper-active navbar--anchor">
+              <img
                 src="./assets/homeIcon--active.svg"
                 alt="HomeButton"
                 class="navbar--img"
-            /></a>
+              />
+            </button>
           </li>
 
-          <li class="navbar--item">
-            <a href="/bookmarks.html" class="navbar--anchor"
-              ><img
+          <li class="navbar--item" data-js="navbar-element">
+            <button class="navbar--anchor">
+              <img
                 src="./assets/bookmark--inactive.svg"
                 alt="Bookmarks"
                 class="navbar--img"
-            /></a>
+              />
+            </button>
           </li>
 
-          <li class="navbar--item">
-            <a href="/create.html" class="navbar--anchor"
-              ><img
+          <li class="navbar--item" data-js="navbar-element">
+            <button class="navbar--anchor">
+              <img
                 src="./assets/create--inactive.svg"
                 alt="Create"
                 class="navbar--img"
-            /></a>
+              />
+            </button>
           </li>
 
-          <li class="navbar--item">
-            <a href="/profile.html" class="navbar--anchor"
-              ><img
+          <li class="navbar--item" data-js="navbar-element">
+            <button class="navbar--anchor">
+              <img
                 src="./assets/profile--inactive.svg"
                 alt="Profile"
                 class="navbar--img"
-            /></a>
+              />
+            </button>
           </li>
         </ul>
       </nav>
     </main>
+    <script src="script.js" type="module" defer></script>
   </body>
 </html>
