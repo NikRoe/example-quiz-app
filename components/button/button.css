@@ -1,4 +1,4 @@
-.button--card {
+.button-card {
   align-self: center;
   border-radius: 9999px;
   background-color: var(--callToAction-button-color);
@@ -6,7 +6,7 @@
   padding: 0.5em;
 }
 
-.button--form {
+.button-form {
   width: 15em;
   align-self: center;
   border-radius: 9999px;

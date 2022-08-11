@@ -27,7 +27,7 @@ export default function card() {
     cardContainer.append(questionText);
 
     const answerButton = document.createElement("button");
-    answerButton.classList.add("button--card");
+    answerButton.classList.add("button-card");
     answerButton.setAttribute("data-js", "answerButton");
     answerButton.textContent = "Show Answer";
     cardContainer.append(answerButton);
